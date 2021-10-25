@@ -55,6 +55,7 @@ spring:
               allowedOrigins: "*"
               allowedMethods: "*"
               allowedHeaders: "*"
+              allowCredentials: true
 endpoints:
   restart: enabled
 eureka:
