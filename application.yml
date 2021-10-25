@@ -46,6 +46,14 @@ spring:
   cloud:
     config:
       uri: http://${CONFIGSERVER_1_PORT_8888_TCP_ADDR:localhost}:8888
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+            - GET
+            - POST  
 endpoints:
   restart: enabled
 eureka:
