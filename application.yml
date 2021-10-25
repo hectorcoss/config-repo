@@ -47,13 +47,14 @@ spring:
     config:
       uri: http://${CONFIGSERVER_1_PORT_8888_TCP_ADDR:localhost}:8888
     gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "*"
-            allowedMethods:
-            - GET
-            - POST  
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
 endpoints:
   restart: enabled
 eureka:
