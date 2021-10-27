@@ -1,6 +1,7 @@
 name: A New Client
 tier: 1
 config:
+  something: value
   profile: uat
   controls:
     - component: Name input control
