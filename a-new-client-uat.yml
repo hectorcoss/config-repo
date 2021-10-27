@@ -3,11 +3,11 @@ tier: 1
 config:
   profile: uat
   fields:
-    component1: Name input control
+    - component: Name input control
       type: textbox
       id: txtName
-    component2: Name label control
+    - component: Name label control
       type: label
       id: lblName
-    field1: some value
-    field2: another value
+    - field: some value
+    - field: another value
