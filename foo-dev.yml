@@ -5,3 +5,4 @@ config:
   fields:
     component1: textbox
     component2: dropdown
+    field1: some value
