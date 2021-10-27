@@ -1,3 +1,7 @@
 bar: spam
 foo: from foo development
 democonfigclient.message: hello from dev profile
+config:
+  fields:
+    component1: textbox
+    component2: dropdown
