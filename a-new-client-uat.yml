@@ -9,5 +9,8 @@ config:
     - component: Name label control
       type: label
       id: lblName
+    - component: Last name input control
+      type: textbox
+      id: txtLastName
     - field: some value
     - field: another value
